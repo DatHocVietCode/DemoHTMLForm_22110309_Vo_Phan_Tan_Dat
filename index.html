@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <title>Main page</title>
+</head>
+<body>
+    <div id = "main">
+        <div class="header">
+            <ul id ="nav">
+                <img id = "logo" src = "assets/images/cv-creative-logo-design-vector-art-any-type-business-company-name-starts-letters-right-153368328.webp">
+                <li><a href="">Việc làm</a>
+                        <ul class="subnav">
+                            <li><a href="#">Top việc làm</a></li>
+                            <li><a href="#">Việc làm phù hợp</a></li>
+                          
+                        </ul>
+                    </li>
+                <li><a href="">Hồ sơ</a>
+                        <ul class="subnav">
+                            <li><a href="#">Top hồ sơ</a></li>
+                            <li><a href="#">Hồ sơ mẫu</a></li>
+                          
+                        </ul>
+                </li>
+                <li><a href="">Công ty</a>
+                    <ul class="subnav">
+                        <li><a href="#">Top công ty</a></li>
+                        <li><a href="#">Danh sách công ty</a></li>
+                    </ul> 
+                </li>
+            </ul>
+
+             <div class="button-container">
+                <button class="btn sign_in">ĐĂNG NHẬP</button>
+                <button class="btn sign_up">ĐĂNG KÝ</button>
+                <button class="btn finding">ĐĂNG TUYỂN VÀ TÌM HỒ SƠ</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section1_container">
+                <div class="container-left col col-half">
+                    <div class="searchbar_container">
+                        <div class="icon_search_container">
+                            <i class="ti-search icon_search"></i>
+                        </div>
+                        <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                    </div>
+                    <div>
+                        <img src="./assets/images/OIP.jpg" class = "banner">
+                    </div>
+                </div>
+               
+                <div class="container-right col col-half">
+                    <h2 class="slider_title">Quotes</h2>
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide active" style="background-image: url('./assets/images/1803458-Robert-M-Pirsig-Quote-Even-though-quality-cannot-be-defined-you.jpg');"></div>
+                            <div class="slide" style="background-image: url('./assets/images/4676853-Henry-Ford-Quote-Quality-means-doing-it-right-when-no-one-is.jpg');"></div>
+                            <div class="slide" style="background-image: url('./assets/images/5068931-Mark-Twain-Quote-Obscurity-and-a-competence-that-is-the-life-that.jpg');"></div>
+                        </div>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section2_container">
+                <h1 style="color: #003366; margin:16px 0;">TOP VIỆC LÀM</h1>
+                <div class="filter_container">
+                    <!-- Combo box Lĩnh vực -->
+                    <div class="field_container">
+                        <label for="linh-vuc">Lĩnh vực:</label>
+                            <select id="linh-vuc" name="linh-vuc">
+                                <option value="" disabled selected>Chọn lĩnh vực</option>
+                                <option value="it">Công nghệ thông tin</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="finance">Tài chính</option>
+                                <option value="education">Giáo dục</option>
+                                <option value="health">Y tế</option>
+                            </select>
+
+                    </div>
+                    <!-- Combo box Mức lương -->
+                    <div class="field_container">
+                        <label for="muc-luong">Mức lương:</label>
+                        <select id="muc-luong" name="muc-luong">
+                            <option value="" disabled selected>Chọn mức lương</option>
+                            <option value="below-5m">Dưới 5 triệu</option>
+                            <option value="5-10m">5 triệu - 10 triệu</option>
+                            <option value="10-20m">10 triệu - 20 triệu</option>
+                            <option value="above-20m">Trên 20 triệu</option>
+                        </select>
+                    </div>
+                    <!-- Combo box Kinh nghiệm -->
+                    <div class="field_container">
+                        <label for="kinh-nghiem">Kinh nghiệm:</label>
+                        <select id="kinh-nghiem" name="kinh-nghiem">
+                            <option value="" disabled selected>Chọn kinh nghiệm</option>
+                            <option value="no-experience">Chưa có kinh nghiệm</option>
+                            <option value="1-year">1 năm</option>
+                            <option value="2-5-years">2 - 5 năm</option>
+                            <option value="above-5-years">Trên 5 năm</option>
+                        </select>
+                
+                    </div>
+                    <!-- Combo box Địa điểm -->
+                    <div class="field_container">
+                        <label for="dia-diem">Địa điểm:</label>
+                        <select id="dia-diem" name="dia-diem">
+                            <option value="" disabled selected>Chọn địa điểm</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hcm">TP. Hồ Chí Minh</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="haiphong">Hải Phòng</option>
+                            <option value="cantho">Cần Thơ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="work_container">
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_card">
+                        <div class="logo_container"></div>
+                        <div class="detail_job">
+                            <h3 class="job_title">DevOps Engineer</h3>
+                            <h4 class="company_name">Công Ty TNHH LG CNS VIỆT NAM</h4>
+                            <div class="detail_card_container">
+                                <div class="bg_ccc salary">Thỏa thuận</div>
+                                <div class="bg_ccc place">Hà Nội</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+
+            <div class="section3_container">
+                <h1 class="s3_title">CẨM NANG NGHỀ NGHIỆP</h1>
+                <div class="col_container_s3">
+                    <div class="col col-third content_se3">
+                        <div class="col_content">
+                            <a href="https://nghenghiep.vieclam24h.vn/loa-tin-tuc/viec-lam-24h-lan-dau-ra-mat-app/?utm_source=vieclam24h.vn&utm_medium=referral&utm_campaign=site-vieclam24h.vn&utm_content=home-page" >
+                                <div class="img_container" style="background-image: url(./assets/images/tiet-kiem-thoi-gian-tim-viec1.jpg);"></div>
+                                <div class="title">6 bước giúp bạn tiết kiệm thời gian tìm việc nhanh chóng, hiệu quả</div>
+                                <div class="detail">Mất vài tháng trời mới có thể ứng tuyển vào một vị trí khiến bạn dễ rơi vào tình trạng chán nản do tiêu tốn quá nhiều thời gian và công sức. Với 6 bước lập kế hoạch cụ thể dưới đây, công cuộc tìm kiếm việc làm sẽ trở nên đơn giản và hiệu quả, nhanh chóng hơn rất nhiều. Cùng theo dõi nhé!</div>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col col-third content_se3">
+                        <div class="col_content">
+                            <a href="https://nghenghiep.vieclam24h.vn/la-ban-su-nghiep/bat-mi-cach-tim-viec-chi-trong-vong-48-tieng/?utm_source=vieclam24h.vn&utm_medium=referral&utm_campaign=site-vieclam24h.vn&utm_content=home-page">
+                                <div class="img_container" style="background-image: url(./assets/images/tìm-việc-trong-48-tiếng.jpg);"></div>
+                                <div class="title">Tìm việc trong 48 tiếng hiệu quả, tiết kiệm thời gian với 4 cách cực đơn giản sau!</div>
+                                <div class="detail">Giai đoạn tìm công việc mới khiến chúng ta mất khá nhiều thời gian và công sức. Để quá trình này không còn quá mệt mỏi như trước đây, hãy tham khảo gợi ý tìm kiếm công việc hiệu quả chỉ trong vòng dưới 48 giờ với 4 bước đơn giản dưới đây.</div>   
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col col-third content_se3">
+                        <div class="col_content">
+                            <a href="https://nghenghiep.vieclam24h.vn/loa-tin-tuc/viec-lam-24h-lan-dau-ra-mat-app/?utm_source=vieclam24h.vn&utm_medium=referral&utm_campaign=site-vieclam24h.vn&utm_content=home-page&_gl=1*x53i4z*_gcl_au*MTQ0NjY3NTg1OC4xNzI2ODA4MTEx*_ga*NjQ2NzUwNzE2LjE3MjY4MDgxMTE.*_ga_1QF2GYW1WQ*MTcyNjk3OTc1MS43LjEuMTcyNjk3OTg5Mi41OC4wLjA.">
+                                <div class="img_container" style="background-image: url(./assets/images/App-Vieclam24h.webp);"></div>
+                                <div class="title">Ra mắt app Vieclam24h: Ứng tuyển 1 chạm, mọi lúc mọi nơi</div>
+                                <div class="detail">Bạn muốn tìm kiếm công việc phù hợp với năng lực và đam mê? Bạn mong muốn được làm việc trong một môi trường chuyên nghiệp và năng động? Với hơn 25 triệu lượt truy cập mỗi năm, Việc Làm 24h đã trở thành người bạn đồng hành đáng tin cậy của hàng triệu ứng dụng.</div>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="section4_container">
+                
+                <h1>CONTACT INFORMATION</h1>
+                <div class="sub_container_s4">
+                    <div class="col col-half ">
+                        <div class="col_container_s4">
+                            <h1 class="title">HOTLINE CHO NGƯỜI TÌM VIỆC</h1>
+                            <div class="contact_container">
+                                <div class="southern">
+                                    <h3>Hotline hỗ trợ miền Nam</h3>
+                                    <h2>HCM: (027) 788 999</h2>
+                                </div>
+                                <div class="nothern">
+                                    <h3>Hotline hỗ trợ miền Bắc</h3>
+                                    <h2>HN: (027) 788 991</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="col col-half ">
+                        <div class="col_container_s4">
+                            <h1 class="title">HOTLINE CHO NGƯỜI TÌM VIỆC</h1>
+                            <div class="contact_container">
+                                <div class="southern">
+                                    <h3>Hotline hỗ trợ miền Nam</h3>
+                                    <h2>HCM: (027) 788 999</h2>
+                                </div>
+                                <div class="nothern">
+                                    <h3>Hotline hỗ trợ miền Bắc</h3>
+                                    <h2>HN: (027) 788 991</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                    
+            </div>
+            <div id="footer">
+                <div class="social-list">
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-twitter"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
+                </div>
+                <div class="copyright">Powered by <a href="">Tấn Đạt</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const slidesContainer = document.querySelector('.slides');
+
+function changeSlide(direction) {
+    currentIndex = (currentIndex + direction + slides.length) % slides.length;
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}% )`; // Di chuyển slide theo trục X
+}
+
+// Tự động chuyển slide mỗi 3 giây
+let slideInterval = setInterval(() => {
+    changeSlide(1); // Chuyển sang slide tiếp theo
+}, 2000);
+
+// Tạm dừng tự động khi di chuột vào slider
+document.querySelector('.slider').addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+});
+
+// Tiếp tục tự động chuyển slide khi rời chuột khỏi slider
+document.querySelector('.slider').addEventListener('mouseleave', () => {
+    slideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 2000);
+});
+
+</script>
+</html>
